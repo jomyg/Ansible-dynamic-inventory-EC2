@@ -245,7 +245,7 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-<center><img alt="server" src=""> </img></center>
+<center><img alt="infra" src="1 vbpfj_ytmt7Pm4U0oW-oSw.jpeg"> </img></center>
 
  ## Conclusion
 
