@@ -8,7 +8,7 @@
     instance_ami: "ami-0e0ff68cb8e9a188a"
   environment:
     AWS_ACCESS_KEY: "AKIAPSC43FJ"
-    AWS_SECRET_KEY: "aPXYPZjp536hH/kE/Y1Lm8"
+    AWS_SECRET_KEY: "aPXYPZjp536hH/kY1Lm8"
     AWS_REGION: "ap-south-1"
 
   tasks:
