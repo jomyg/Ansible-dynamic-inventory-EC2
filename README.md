@@ -38,3 +38,9 @@ pip3 install boto3
 pip3 install boto
 pip3 install botocore
 ```
+> You need to verify the localhost ansible is now able to communicate with python3. For verify
+
+```sh
+$ ansible -i hosts localhost -m setup | grep "ansible_python_version"
+        "ansible_python_version": "3.7.10"
+ ```
