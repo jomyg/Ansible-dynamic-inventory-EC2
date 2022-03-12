@@ -203,12 +203,11 @@ TASK [AWS Infra - Creating another remote security group] **********************
 changed: [localhost]
 
 TASK [AWS Infra - Creating Ec2 Instance for Installing the webserver] **************************************************************************************************
-[DEPRECATION WARNING]: The 'ec2' module has been deprecated and replaced by the 'ec2_instance' module'. This feature will be removed in version 4.0.0. Deprecation
-warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
 changed: [localhost]
 
 TASK [AWS Infra - Creating Dynamic Inventory for the EC2 creation] *****************************************************************************************************
 changed: [localhost] => (item={u'ramdisk': None, u'kernel': None, u'root_device_type': u'ebs', u'private_dns_name': u'ip-172-31-39-190.ap-south-1.compute.internal', u'block_device_mapping': {u'/dev/xvda': {u'status': u'attached', u'delete_on_termination': True, u'volume_id': u'vol-0265addf98aebb093'}}, u'key_name': u'OLA', u'public_ip': u'3.110.157.83', u'image_id': u'ami-0e0ff68cb8e9a188a', u'tenancy': u'default', u'private_ip': u'172.31.39.190', u'groups': {u'sg-0fe812ca375faf1ef': u'OLA-remote', u'sg-0fe5299ac58ba9ec1': u'OLA-webserver'}, u'public_dns_name': u'ec2-3-110-157-83.ap-south-1.compute.amazonaws.com', u'state_code': 16, u'id': u'i-03972bd8edd6d455b', u'tags': {u'project': u'OLA', u'Name': u'OLA-webserver'}, u'placement': u'ap-south-1a', u'ami_launch_index': u'1', u'dns_name': u'ec2-3-110-157-83.ap-south-1.compute.amazonaws.com', u'region': u'ap-south-1', u'ebs_optimized': False, u'launch_time': u'2022-03-12T11:06:21.000Z', u'instance_type': u't2.micro', u'state': u'running', u'root_device_name': u'/dev/xvda', u'hypervisor': u'xen', u'virtualization_type': u'hvm', u'architecture': u'x86_64'})
+
 changed: [localhost] => (item={u'ramdisk': None, u'kernel': None, u'root_device_type': u'ebs', u'private_dns_name': u'ip-172-31-46-166.ap-south-1.compute.internal', u'block_device_mapping': {u'/dev/xvda': {u'status': u'attached', u'delete_on_termination': True, u'volume_id': u'vol-0ac6d29e3de131d86'}}, u'key_name': u'OLA', u'public_ip': u'13.232.210.242', u'image_id': u'ami-0e0ff68cb8e9a188a', u'tenancy': u'default', u'private_ip': u'172.31.46.166', u'groups': {u'sg-0fe812ca375faf1ef': u'OLA-remote', u'sg-0fe5299ac58ba9ec1': u'OLA-webserver'}, u'public_dns_name': u'ec2-13-232-210-242.ap-south-1.compute.amazonaws.com', u'state_code': 16, u'id': u'i-0e8a5e50b0f1a3d7b', u'tags': {u'project': u'OLA', u'Name': u'OLA-webserver'}, u'placement': u'ap-south-1a', u'ami_launch_index': u'0', u'dns_name': u'ec2-13-232-210-242.ap-south-1.compute.amazonaws.com', u'region': u'ap-south-1', u'ebs_optimized': False, u'launch_time': u'2022-03-12T11:06:21.000Z', u'instance_type': u't2.micro', u'state': u'running', u'root_device_name': u'/dev/xvda', u'hypervisor': u'xen', u'virtualization_type': u'hvm', u'architecture': u'x86_64'})
 
 TASK [AWS Infra - Waiting for instances to become Online. Please wait] *************************************************************************************************
@@ -217,11 +216,7 @@ ok: [localhost]
 PLAY [AWS Infra - Ec2 Instances Provisioning] **************************************************************************************************************************
 
 TASK [Gathering Facts] *************************************************************************************************************************************************
-[WARNING]: Platform linux on host 3.110.157.83 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter
-could change this. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
 ok: [3.110.157.83]
-[WARNING]: Platform linux on host 13.232.210.242 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter
-could change this. See https://docs.ansible.com/ansible/2.9/reference_appendices/interpreter_discovery.html for more information.
 ok: [13.232.210.242]
 
 TASK [AWS Infra - Installing apache webserver] *************************************************************************************************************************
