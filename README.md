@@ -44,6 +44,8 @@ pip3 install botocore
 $ ansible -i hosts localhost -m setup | grep "ansible_python_version"
         "ansible_python_version": "3.7.10"
  ```
+<center><img alt="infra" src="1 vbpfj_ytmt7Pm4U0oW-oSw.jpeg"> </img></center>
+
 ### Behind the code : main.yml
 ```sh
 ---
@@ -245,7 +247,7 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-<center><img alt="infra" src="1 vbpfj_ytmt7Pm4U0oW-oSw.jpeg"> </img></center>
+
 
  ## Conclusion
 
