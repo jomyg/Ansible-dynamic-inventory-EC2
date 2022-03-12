@@ -57,8 +57,8 @@ $ ansible -i hosts localhost -m setup | grep "ansible_python_version"
     instance_type: "t2.micro"
     instance_ami: "ami-0e0ff68cb8e9a188a"
   environment:
-    AWS_ACCESS_KEY: "AKIASH75KEPNAPSC43FJ"
-    AWS_SECRET_KEY: "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"
+    AWS_ACCESS_KEY: "AKIASH75KEPN43FJ"
+    AWS_SECRET_KEY: "aPXYPZjpC4Vlm9yXShH/kE/Y1Lm8"
     AWS_REGION: "ap-south-1"
 
   tasks:
