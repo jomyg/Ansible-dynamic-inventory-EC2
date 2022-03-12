@@ -11,7 +11,27 @@ We will be provisioning the following :
 - Retrieve the IP Address of instance using dynamic inventory concept.
 - Configuring the web server through Ansible.
 
-## Prerequisite
 
-- Access key and secret key for AWS IAM user with administrator access.
-- Install Ansible2 on your machine which is master.
+## Prerequisite
+-----
+- Need to install ansible2 on Master node to run
+- AWS CLI Programmatic user
+- python3
+- python3-pip
+- boto3
+- awscli with latest version 
+-----
+
+### Ansible installation 
+
+```sh
+amazon-linux-extras install epel -y
+amazon-linux-extras install ansible2 -y
+yum install python3
+yum install python3-pip
+pip install awscli --upgrade
+ansible-galaxy collection install amazon.aws
+pip3 install boto3
+pip3 install boto
+pip3 install botocore
+```
